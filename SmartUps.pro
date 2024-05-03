@@ -15,6 +15,7 @@ SOURCES += \
     translator.cpp
 
 HEADERS += \
+    commons.hpp \
     mainwindow.hpp \
     smartupsserialclient.hpp \
     translator.hpp
@@ -26,3 +27,6 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+DISTFILES += \
+    strings.txt
